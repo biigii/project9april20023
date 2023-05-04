@@ -1,0 +1,9 @@
+@import './variable';
+
+.container {
+  min-width: $width;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
