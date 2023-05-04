@@ -1,7 +1,11 @@
-@import './variable';
+@import "./variable";
 
 .container {
-  min-width: $width;
+  max-width: $width;
+  padding: {
+    right: 10px;
+    left: 10px;
+  }
   margin: {
     left: auto;
     right: auto;

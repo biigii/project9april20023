@@ -1,156 +1,20 @@
-$primary-color: #525444;
-$secondary-color: #1e1ed3;
-
-* {
-  margin: 0;
-}
-
-body {
-  color: $primary-color;
-}
-
-h1 {
-  // text-align: center;
-  // text-decoration: underline;
-  // text-transform: uppercase;
-  text: {
-    align: center;
-    decoration: underline;
-    transform: uppercase;
-  }
-  // font-size: 3em;
-  // font-family: 'Courier New', Courier, monospace;
-  // font-weight: 100;
-  // font-style: italic;
-  font: {
-    size: 4em;
-    family: 'Courier New', Courier, monospace;
-    weight: 100;
-    style: italic;
-  }
-  margin: {
-    top: 100px;
-    bottom: 50px;
-  }
-  color: $secondary-color;
-  border : {
-    style: solid;
-    color: $secondary-color;
-    width: 5px
-  }
-}
-
-// header {
-//   height: 150px;
-//   background-color: blue;
-// }
-
-// header .navigation {
-//   text-align: center;
-//   line-height: 150px;
-// }
-
-// nav.navigation a {
-//   color: #fff;
-//   text-decoration: none;
-//   text-transform: capitalize;
-//   font-size: 2em;
-//   margin: 0 30px;
-//   transition-property: color;
-//   transition-duration: 500ms;
-// }
-
-// nav.navigation a:hover {
-//   color: #fff;
-// }
-
-header {
-  background-color: $secondary-color;
-  height: 150px;
-  .navigation {
-    height: 150px;
-    line-height: 150px;
-    text-align: center;
+nav ul {
+  list-style-type: none;
+  li {
+    display: inline-block;
+    margin: {
+      left: 20px;
+      right: 20px;
+    }
     a {
-      color: #fff;
-      text-transform: capitalize;
       text-decoration: none;
-      margin: 0 20px;
-      font-size: 2em;
-      transition: {
-        property: color;
-        duration: 500ms
-      };
-      &:hover {
-        color: $primary-color;
-      }
     }
   }
 }
 
-// .btn {
-//   width: 120px;
-//   height: 50px;
-//   border: {
-//     style: solid;
-//     width: 2px;
-//     radius: 10px;
-//     color: #000
-//   }
-// }
-
-%btn {
-  width: 120px;
-  height: 50px;
-  border: {
-    style: solid;
-    width: 2px;
-    radius: 10px;
-    color: #e1d9d9
-  }
-}
-
-.btn-success {
-  @extend %btn;
-  background-color: rgb(11, 128, 0);
-  color: #fff
-}
-
-.btn-danger {
-  @extend %btn;
-  background-color: #c81616;
-  color: #fff;
-}
-
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: calc(100% * $i / 12);
-  }
-}
-
-
-body {
-  @media (max-width: 800px) {
-    background-color: #cf1919;
-  }
-  @media (min-width: 800px) {
-    background-color: #0c5ac0;
-  }
-}
-
-h1 {
-  color: #fff;
-  cursor: pointer;
-  @media (max-width: 700px) {
-    font-size: 3em;
-  }
-  @media (min-width: 700px) and (max-width: 1400px){
-    font-size: 8em;
-  }
-  @media (min-width: 1400px) {
-    font-size: 13em;
-  }
-  &:hover {
-    color: #000;
+.list {
+  border: 2px solid;
+  li {
+    list-style-type: square;
   }
 }

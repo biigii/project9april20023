@@ -1,20 +1,7 @@
 @import './variable';
 
 h1 {
-  color: $color;
+  color: $red;
   font-size: 4em;
-  text-align: left;
-}
-
-header {
-  background-color: #fff;
-  .navigation {
-    height: 150px;
-    a {
-      text-decoration: none;
-      &:hover {
-        color: #000
-      }
-    }
-  }
+  text-align: center;
 }
